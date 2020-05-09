@@ -2,14 +2,9 @@
 using namespace std;
 int main()
 {
-    int i;
-    float f;
-    char c;
-    double d;
-
-    cout<<"Size of char   : "<<sizeof(c)<<" byte"<<endl;
-    cout<<"Size of int    : "<<sizeof(i)<<" byte"<<endl;
-    cout<<"Size of float  : "<<sizeof(f)<<" byte"<<endl;
-    cout<<"Size of double : "<<sizeof(d)<<" byte"<<endl;
+    cout<<"Size of char   : "<<sizeof(char)<<" byte"<<endl;
+    cout<<"Size of int    : "<<sizeof(int)<<" byte"<<endl;
+    cout<<"Size of float  : "<<sizeof(float)<<" byte"<<endl;
+    cout<<"Size of double : "<<sizeof(double)<<" byte"<<endl;
     return 0;
 }
