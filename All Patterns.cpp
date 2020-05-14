@@ -1,4 +1,4 @@
-#include<iostream.h>
+#include<iostream>
 void pattern1();
 void pattern2();
 void pattern3();
@@ -7,6 +7,7 @@ void pattern5();
 void pattern6();
 void pattern7();
 void pattern8();
+void pattern9();
 using namespace std;
 int main()
 {
@@ -188,20 +189,32 @@ void pattern6(void)
 
 void pattern7(void)
 {
-    int n,s,j,i;
-    cout<<"Enter rows : ";
-    cin>>n;
+    int n=10,i,j,s,k;
     for(i=1;i<=n;i++)
     {
-        for(j=1;j<=i;j++)
+        for(s=1;s<=n-i;s++)
         {
-            if( i==n || j==1 || j==i )
-                cout<<"*";
-            else
-                cout<<" ";
+            cout<<" ";
         }
+
+        for(j=(n-i)+1;j<=n;j++)
+        {
+            cout<<j%10;
+        }
+
+        for(k=n-1;k>=((n-i)+1);k--)
+        {
+            cout<<k%10;
+        }
+
+        for(s=1;s<=n-i;s++)
+        {
+            cout<<" ";
+        }
+
         cout<<endl;
     }
+
 }
 
 void pattern8(void)
@@ -226,3 +239,20 @@ int n,s,j,i,k;
     }
 }
 
+void pattern9()
+{
+    int n,s,j,i;
+    cout<<"Enter rows : ";
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            if( i==n || j==1 || j==i )
+                cout<<"*";
+            else
+                cout<<" ";
+        }
+        cout<<endl;
+    }
+}
